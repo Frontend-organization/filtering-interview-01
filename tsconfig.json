@@ -3,13 +3,14 @@
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "baseUrl": ".",
     "paths": {
-      "@services": ["./src/services/*"],
-      "@components": ["./src/components/*"],
-      "@hooks": ["./src/hooks/*"],
-      "@assets": ["./src/assets/*"],
-      "@context": ["./src/context/*"],
-      "@libs": ["./src/libs/*"]
+      "@services/*": ["./src/services/*"],
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@context/*": ["./src/context/*"],
+      "@libs/*": ["./src/libs/*"]
     }
   },
   "files": ["./Global.d.ts"],
