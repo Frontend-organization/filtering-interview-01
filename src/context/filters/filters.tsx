@@ -39,7 +39,10 @@ const FiltersProvider: React.FC = ({ children }) => {
 
   useEffect(() => {
     const searchFilters = new URLSearchParams(window.location.search)
-    _setFilters(searchFilters.get('filters')?.split(' ') || [])
+    const nextFilters = searchFilters.get('filters')?.split(' ')
+    _setFilters(
+      nextFilters.filter((f) => f !== '').length > 0 ? nextFilters : []
+    )
   }, [])
 
   return (
