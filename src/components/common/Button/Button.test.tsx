@@ -1,4 +1,5 @@
 import { act, fireEvent, render } from '@testing-library/react'
+
 import Button from './Button'
 
 describe('<Button />', () => {
@@ -37,5 +38,16 @@ describe('<Button />', () => {
       <Button renderLeft={<span>left</span>}>Button</Button>
     )
     expect(getByText('left')).toBeInTheDocument()
+  })
+
+  it('should render button with prop styles', () => {
+    const { getByText } = render(
+      <Button rounded fullWidth>
+        btn
+      </Button>
+    )
+    const button = getByText('btn')
+    expect(button).toHaveClass('rounded')
+    expect(button).toHaveClass('full')
   })
 })
