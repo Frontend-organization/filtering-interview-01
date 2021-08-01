@@ -6,6 +6,8 @@
   display: flex;
   font-size: 1rem;
   font-weight: 600;
+  justify-content: center;
+  min-width: 12px;
   padding: 10px 27px;
 }
 
@@ -20,11 +22,6 @@
   color: var(--color-gray-900);
 }
 
-.rightElement {
-  align-items: center;
-  display: flex;
-  margin-left: .4rem;
-}
 
 .leftElement {
   align-items: center;
@@ -32,3 +29,16 @@
   margin-right: .4rem;
 }
 
+.rightElement {
+  align-items: center;
+  display: flex;
+  margin-left: .4rem;
+}
+
+.rounded {
+  border-radius: 50px;
+}
+
+.full {
+  width: 100%;
+}
