@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     new DefinePlugin({
       //map your environment variables here
-      //sample: "process.env.API_KEY": JSON.stringify(process.env.API_KEY)
+      "process.env.REACT_APP_DATA_ENDPOINT": JSON.stringify(process.env.REACT_APP_DATA_ENDPOINT)
     })
   ]
 }
