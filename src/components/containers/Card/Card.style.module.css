@@ -1,0 +1,30 @@
+.card {
+  width: 165px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.cardBeer {
+  padding: 18px 14px 0;
+}
+
+.cardButtonText {
+  color: var(--color-blue-500);
+}
+
+.beerTitle {
+  margin: 12px 0 6px;
+  font-size: 14px;
+}
+
+.beerDescription {
+  margin: 6px 0 7px;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.beerPrice {
+  margin: 7px 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
