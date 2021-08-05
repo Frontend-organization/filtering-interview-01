@@ -1,11 +1,11 @@
-import styles from './BeerPicture.style.module.css'
+import styles from './Picture.style.module.css'
 
 type Props = {
   img?: string
   alt?: string
 }
 
-const BeerPicture: React.FC<Props> = ({ img, alt }) => {
+const Picture: React.FC<Props> = ({ img, alt }) => {
   return (
     <picture className={styles.image}>
       <img src={img} alt={alt} />
@@ -13,4 +13,4 @@ const BeerPicture: React.FC<Props> = ({ img, alt }) => {
   )
 }
 
-export default BeerPicture
+export default Picture
