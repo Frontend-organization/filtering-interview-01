@@ -14,6 +14,8 @@ type Props = {
   }
 }
 
+const prueba = () => console.log('me hiciste click')
+
 const Card: React.FC<Props> = ({
   product: { title, description, price, image }
 }) => {
@@ -23,12 +25,22 @@ const Card: React.FC<Props> = ({
         <div className={styles.cardBeer}>
           <Flex flexDirection="column">
             <BeerPicture img={image} alt={'cerveza'} />
-            <h3 className={styles.beerTitle}>{title}</h3>
+            <p className={styles.beerTitle}>{title}</p>
             <p className={styles.beerDescription}>{description}</p>
-            <p className={styles.beerPrice}>{`$${price / 1000}00`}</p>
+            <p className={styles.beerPrice}>{`$${(price / 1000).toFixed(
+              3
+            )}`}</p>
           </Flex>
         </div>
-        <Button style={{ backgroundColor: '#E6E6E6' }}>
+        <Button
+          onClick={prueba}
+          style={{
+            borderColor: 'transparent',
+            backgroundColor: '#f4f4f4',
+            borderTopLeftRadius: 0,
+            borderTopRightRadius: 0
+          }}
+        >
           <span className={styles.cardButtonText}>AGREGAR</span>
         </Button>
       </Flex>

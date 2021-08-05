@@ -1,7 +1,8 @@
 :root {
-    --color-blue-500: #0000A3;
-    --color-gray-100: #e5e5e5;
-    --color-gray-900: #101111;
-    --color-white: #fff;
-    --color-transparent: transparent;
+  --color-blue-500: #0000a3;
+  --color-gray-100: #e5e5e5;
+  --color-gray-600: #6d7275;
+  --color-gray-900: #101111;
+  --color-white: #fff;
+  --color-transparent: transparent;
 }

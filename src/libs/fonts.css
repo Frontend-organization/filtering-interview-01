@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+    url('../assets/fonts/poppins-v15-latin-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins 600';
+  src: url('../assets/fonts/poppins-v15-latin-600.woff') format('woff'),
+    url('../assets/fonts/poppins-v15-latin-600.woff2') format('woff2');
+
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins 700';
+  src: url('../assets/fonts/poppins-v15-latin-700.woff') format('woff'),
+    url('../assets/fonts/poppins-v15-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
