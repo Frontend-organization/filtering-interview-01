@@ -1,9 +1,3 @@
-.image {
-  width: 135px;
-  height: 135px;
-}
-
 .image img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
 }
