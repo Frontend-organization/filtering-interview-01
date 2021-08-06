@@ -1,39 +1,42 @@
 import Button from '@components/common/Button'
-import BeerPicture from '@components/common/BeerPicture'
-
+import Picture from '@components/common/Picture'
 import Flex from '@components/common/Flex'
 
 import styles from './Card.style.module.css'
 
-type Props = {
-  product?: {
-    title?: string
-    description?: string
-    price?: number
-    image?: string
-  }
+export type Product = {
+  title: string
+  description: string
+  price: number
+  image: string
+  filterId: string
 }
 
-const prueba = () => console.log('me hiciste click')
+type Props = {
+  product?: Product
+}
 
 const Card: React.FC<Props> = ({
   product: { title, description, price, image }
 }) => {
+  const priceFormatter = new Intl.NumberFormat('es-CO', {
+    style: 'currency',
+    currency: 'COP',
+    minimumFractionDigits: 0
+  })
+
   return (
     <div className={styles.card}>
       <Flex flexDirection="column">
         <div className={styles.cardBeer}>
           <Flex flexDirection="column">
-            <BeerPicture img={image} alt={'cerveza'} />
-            <p className={styles.beerTitle}>{title}</p>
+            <Picture source={image} alt={title.toLowerCase()} />
+            <h1 className={styles.beerTitle}>{title}</h1>
             <p className={styles.beerDescription}>{description}</p>
-            <p className={styles.beerPrice}>{`$${(price / 1000).toFixed(
-              3
-            )}`}</p>
+            <p className={styles.beerPrice}>{priceFormatter.format(price)}</p>
           </Flex>
         </div>
         <Button
-          onClick={prueba}
           style={{
             borderColor: 'transparent',
             backgroundColor: '#f4f4f4',
