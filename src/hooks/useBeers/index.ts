@@ -1,23 +1,25 @@
 import { useEffect, useState } from 'react'
-import { getBeers } from '../../services/beerService'
+import { getBeers, Beer } from '../../services/beerService'
 
-const useBeers = () => {
+type BeersState = {
+  isLoading: boolean
+  beers: Beer[]
+  error: Error | null
+}
+
+const useBeers = (): BeersState => {
   const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState(null)
-  const [beers, setBeers] = useState([])
+  const [error, setError] = useState<Error | null>(null)
+  const [beers, setBeers] = useState<Beer[]>([])
 
   useEffect(() => {
     setIsLoading(true)
     getBeers()
       .then((data) => {
         setBeers(data)
-        console.log(data)
         setIsLoading(false)
       })
-      .catch((err) => {
-        setError(err)
-        console.log(err)
-      })
+      .catch(setError)
   }, [])
 
   return { isLoading, beers, error }
