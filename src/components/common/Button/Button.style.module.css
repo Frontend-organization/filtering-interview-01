@@ -2,6 +2,7 @@
   align-items: center;
   background-color: var(--color-transparent);
   border: solid 1px;
+  cursor: pointer;
   border-radius: 4px;
   display: flex;
   font-size: 1rem;
@@ -22,17 +23,16 @@
   color: var(--color-gray-900);
 }
 
-
 .leftElement {
   align-items: center;
   display: flex;
-  margin-right: .4rem;
+  margin-right: 0.4rem;
 }
 
 .rightElement {
   align-items: center;
   display: flex;
-  margin-left: .4rem;
+  margin-left: 0.4rem;
 }
 
 .rounded {

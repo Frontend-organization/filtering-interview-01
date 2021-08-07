@@ -46,7 +46,7 @@ module.exports = (env) => ({
         ]
       },
       {
-        test: /\.(png|jpg|gif|mp3|mp4|jpeg)$/i,
+        test: /\.(png|jpg|gif|mp3|mp4|jpeg|ttf|woff|woff2)$/i,
         type: 'asset',
         parser: {
           dataUrlCondition: {
