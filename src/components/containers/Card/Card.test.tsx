@@ -12,7 +12,9 @@ const testProduct: Product = {
 
 describe('<Card />', () => {
   it('should render without crashing', () => {
-    const { getByText, getByAltText } = render(<Card product={testProduct} />)
+    const { getByText, getByAltText } = render(
+      <Card product={testProduct} addProduct={jest.fn()} />
+    )
     expect(getByText(testProduct.title)).toBeDefined()
     expect(getByAltText(testProduct.title.toLowerCase())).toBeInTheDocument()
     expect(getByText(testProduct.description)).toBeDefined()

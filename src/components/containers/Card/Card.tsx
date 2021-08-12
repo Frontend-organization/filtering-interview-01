@@ -14,16 +14,21 @@ export type Product = {
 
 type Props = {
   product?: Product
+  addProduct: (product: Product) => void
 }
 
-const Card: React.FC<Props> = ({
-  product: { title, description, price, image }
-}) => {
+const Card: React.FC<Props> = ({ product, addProduct }) => {
+  const { description, image, price, title } = product
   const priceFormatter = new Intl.NumberFormat('es-CO', {
     style: 'currency',
     currency: 'COP',
-    minimumFractionDigits: 0
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 3
   })
+
+  const handleAddProduct = () => {
+    addProduct(product)
+  }
 
   return (
     <div className={styles.card}>
@@ -37,6 +42,7 @@ const Card: React.FC<Props> = ({
           </Flex>
         </div>
         <Button
+          onClick={handleAddProduct}
           style={{
             borderColor: 'transparent',
             backgroundColor: '#f4f4f4',
