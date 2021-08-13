@@ -1,0 +1,40 @@
+.heading {
+  font-family: 'Poppins 700', sans-serif;
+  color: inherit;
+}
+
+.paragraph {
+  font-family: 'Poppins' sans-serif;
+  color: inherit;
+}
+
+.normal {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.semi-bold {
+  font-family: 'Poppins 600', sans-serif;
+  font-weight: 600;
+}
+
+.bold {
+  font-family: 'Poppins 700', sans-serif;
+  font-weight: 700;
+}
+
+.sm {
+  font-size: 0.85rem;
+}
+
+.md {
+  font-size: 1rem;
+}
+
+.lg {
+  font-size: 1.35rem;
+}
+
+.xl {
+  font-size: 2rem;
+}
