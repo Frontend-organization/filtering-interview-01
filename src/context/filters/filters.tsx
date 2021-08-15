@@ -1,10 +1,4 @@
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useState
-} from 'react'
+import { createContext, useCallback, useContext, useState } from 'react'
 
 type FiltersContext = {
   filters: string[]
@@ -14,7 +8,11 @@ type FiltersContext = {
 const filtersContext = createContext<FiltersContext>({} as FiltersContext)
 
 const FiltersProvider: React.FC = ({ children }) => {
-  const [filters, _setFilters] = useState<string[]>([])
+  const [filters, _setFilters] = useState<string[]>(() => {
+    const searchFilters = new URLSearchParams(window.location.search)
+    const nextFilters = searchFilters.get('filters')?.split(' ') || []
+    return nextFilters.filter((f) => f !== '').length > 0 ? nextFilters : []
+  })
 
   const setFilters = useCallback(
     (newFilters: string[] | ((nextFilters: string[]) => string[])) => {
@@ -36,14 +34,6 @@ const FiltersProvider: React.FC = ({ children }) => {
     },
     [filters]
   )
-
-  useEffect(() => {
-    const searchFilters = new URLSearchParams(window.location.search)
-    const nextFilters = searchFilters.get('filters')?.split(' ') || []
-    _setFilters(
-      nextFilters.filter((f) => f !== '').length > 0 ? nextFilters : []
-    )
-  }, [])
 
   return (
     <filtersContext.Provider value={{ filters, setFilters }}>
