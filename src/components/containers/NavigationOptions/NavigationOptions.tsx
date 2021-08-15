@@ -5,14 +5,24 @@ import styles from './NavigationOptions.style.module.css'
 const NavigationOptions = () => {
   return (
     <div className={styles.Navigation}>
-      <Typography.P weight={'bold'}>SOBRE NOSOTROS</Typography.P>
-      <Typography.P weight={'bold'}>
+      <Typography.Link className={styles.Link} size="md" weight={'bold'}>
+        SOBRE NOSOTROS
+      </Typography.Link>
+      <Typography.Link className={styles.Link} size="md" weight={'bold'}>
         MEDIDAS DE SEGURIDAD (COVID-19)
-      </Typography.P>
-      <Typography.P weight={'bold'}>CÓMO MERCAR</Typography.P>
-      <Typography.P weight={'bold'}>PROVEEDORES</Typography.P>
-      <Typography.P weight={'bold'}>CONTÁCTENOS</Typography.P>
-      <Typography.P weight={'bold'}>ZONA DE COBERTURA</Typography.P>
+      </Typography.Link>
+      <Typography.Link className={styles.Link} size="md" weight={'bold'}>
+        CÓMO MERCAR
+      </Typography.Link>
+      <Typography.Link className={styles.Link} size="md" weight={'bold'}>
+        PROVEEDORES
+      </Typography.Link>
+      <Typography.Link className={styles.Link} size="md" weight={'bold'}>
+        CONTÁCTENOS
+      </Typography.Link>
+      <Typography.Link className={styles.Link} size="md" weight={'bold'}>
+        ZONA DE COBERTURA
+      </Typography.Link>
     </div>
   )
 }

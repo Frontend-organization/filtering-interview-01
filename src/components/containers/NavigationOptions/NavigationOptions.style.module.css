@@ -1,17 +1,30 @@
 .Navigation {
-  width: 100%;
+  border: 1px solid black;
   min-width: 300px;
+  max-width: 1250px;
   padding: 36px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   text-align: center;
 }
 
-@media only screen and (min-width: 600px) {
-  .Navigation {
-    display: flex;
-    justify-content: center;
-  }
+.Navigation .Link {
+  display: block;
+  min-width: 256px;
+  max-width: 300px;
+  margin: 10px 0px;
+}
 
-  .Navigation p {
-    padding: 0 10px;
+@media only screen and (min-width: 600px) {
+  .Navigation .Link {
+    min-width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .Navigation .Link {
+    min-width: 30%;
   }
 }
