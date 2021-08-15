@@ -3,38 +3,44 @@
   color: inherit;
 }
 
-.paragraph {
+.paragraph,
+.link {
   font-family: 'Poppins' sans-serif;
   color: inherit;
 }
 
+.link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .normal {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: var(--weight-normal);
 }
 
 .semi-bold {
   font-family: 'Poppins 600', sans-serif;
-  font-weight: 600;
+  font-weight: var(--weight-semi-bold);
 }
 
 .bold {
   font-family: 'Poppins 700', sans-serif;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
 }
 
 .sm {
-  font-size: 0.85rem;
+  font-size: var(--size-sm);
 }
 
 .md {
-  font-size: 1rem;
+  font-size: var(--size-md);
 }
 
 .lg {
-  font-size: 1.35rem;
+  font-size: var(--size-lg);
 }
 
 .xl {
-  font-size: 2rem;
+  font-size: var(--size-xl);
 }

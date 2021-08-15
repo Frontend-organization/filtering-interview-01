@@ -26,4 +26,15 @@ describe('<Typography />', () => {
     const component = getByText(heading)
     expect(component).toHaveClass('xl normal')
   })
+
+  it('should render a link', () => {
+    const { getByText } = render(
+      <Typography.Link size="md" className="custom-class">
+        Link
+      </Typography.Link>
+    )
+    const link = getByText('Link')
+    expect(link).toHaveClass('custom-class')
+    expect(link).toHaveClass('md')
+  })
 })
