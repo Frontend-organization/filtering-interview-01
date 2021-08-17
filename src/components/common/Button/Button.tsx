@@ -18,12 +18,13 @@ const Button: React.FC<Props> = ({
   rounded,
   type = 'button',
   variant = 'secondary',
+  className,
   ...rest
 }) => {
   const buttonStyles = `${styles.button} 
-  ${rounded && styles.rounded} ${fullWidth && styles.full} ${
+  ${rounded ? styles.rounded : ''} ${fullWidth ? styles.full : ''} ${
     variant === 'primary' ? styles.primary : styles.secondary
-  }`
+  } ${className || ''}`
 
   return (
     <button className={buttonStyles} type={type} {...rest}>
