@@ -2,6 +2,7 @@ import NavigationOptions from '../NavigationOptions'
 import Typography from '@components/common/Typography'
 import IconChat from '@assets/icons/chat.svg'
 import IconPhone from '@assets/icons/phone.svg'
+import IconInstagram from '@assets/icons/instagram.svg'
 import Button from '@components/common/Button'
 import Flex from '@components/common/Flex'
 import Spacer from '@components/common/Spacer'
@@ -41,6 +42,23 @@ const Footer = () => {
         </Flex>
       </div>
       <NavigationOptions />
+      <hr />
+      <Spacer y={46} />
+      <div className={styles.InstagramContainer}>
+        <Button
+          rounded
+          className={styles.Instagram}
+          style={{ padding: 20, width: 'fit-content' }}
+        >
+          <IconInstagram width={30} height={30} />
+        </Button>
+        <Spacer y={5} />
+        <Typography.P size="sm" weight="bold">
+          POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES
+        </Typography.P>
+      </div>
+      <Spacer y={36} />
+      <div className={styles.Filter}></div>
     </div>
   )
 }

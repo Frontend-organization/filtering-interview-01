@@ -18,3 +18,23 @@
   border: 1px solid white;
   background-color: var(--color-white);
 }
+
+hr {
+  width: 12%;
+  border: 1px solid #c8d5d9;
+  margin: 0 auto;
+}
+
+.InstagramContainer {
+  text-align: center;
+}
+
+.Instagram {
+  margin: 0 auto;
+  background-color: var(--color-blue-500);
+}
+
+.Filter {
+  background-color: var(--color-gray-900);
+  padding: 20px 0;
+}
