@@ -34,7 +34,12 @@ hr {
   background-color: var(--color-blue-500);
 }
 
-.Filter {
+.CreditsContainer {
+  text-align: center;
   background-color: var(--color-gray-900);
-  padding: 20px 0;
+  padding: 10px 0;
+}
+
+.Credits {
+  color: var(--color-white);
 }

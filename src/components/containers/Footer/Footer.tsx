@@ -58,7 +58,11 @@ const Footer = () => {
         </Typography.P>
       </div>
       <Spacer y={36} />
-      <div className={styles.Filter}></div>
+      <div className={styles.CreditsContainer}>
+        <Typography.P className={styles.Credits} size="sm" weight="bold">
+          &copy; 2020 Axiacore
+        </Typography.P>
+      </div>
     </div>
   )
 }
