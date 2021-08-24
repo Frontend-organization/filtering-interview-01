@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "resolveJsonModule": true,
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "plugins": [{ "name": "typescript-plugin-css-modules" }],

@@ -10,28 +10,41 @@
   text-align: center;
 }
 
-.ButtonContainer {
-  text-align: center;
+.FooterButton {
+  width: fit-content;
+  padding: 20px;
 }
 
-.ButtonClick {
+.BtnFooter .Btn {
+  background-color: var(--color-white);
+}
+
+.Btn {
+  width: fit-content;
+  padding: 20px;
+}
+
+.BtnFooter .ButtonContact {
   border: 1px solid white;
   background-color: var(--color-white);
 }
 
-hr {
-  width: 12%;
-  border: 1px solid #c8d5d9;
-  margin: 0 auto;
-}
-
-.InstagramContainer {
+.Suscribe {
   text-align: center;
+  position: relative;
 }
 
-.Instagram {
+.Suscribe::before {
+  content: '';
+  width: 40px;
+  border-top: 1px solid #c8d5d9;
+  position: absolute;
+  top: -50px;
+  transform: translateX(-50%);
+}
+
+.Suscribe .Btn {
   margin: 0 auto;
-  background-color: var(--color-blue-500);
 }
 
 .CreditsContainer {

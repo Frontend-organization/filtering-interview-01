@@ -18,23 +18,14 @@ const Footer = () => {
         </Typography.Heading>
         <Spacer y={18} />
         <Flex justifyContent="space-around">
-          <div className={styles.ButtonContainer}>
-            <Button
-              fullWidth
-              rounded
-              className={styles.ButtonClick}
-              style={{ padding: 22, width: 'fit-content' }}
-            >
+          <div className={styles.BtnFooter}>
+            <Button fullWidth rounded className={styles.Btn}>
               <IconChat width={30} height={28} fill="#000" />
             </Button>
             <Typography.P weight="bold">CHAT</Typography.P>
           </div>
-          <div className={styles.ButtonContainer}>
-            <Button
-              rounded
-              className={styles.ButtonClick}
-              style={{ padding: 22, width: 'fit-content' }}
-            >
+          <div className={styles.BtnFooter}>
+            <Button rounded className={styles.Btn}>
               <IconPhone width={30} height={28} fill="#000" />
             </Button>
             <Typography.P weight="bold">LLAMAR</Typography.P>
@@ -42,15 +33,10 @@ const Footer = () => {
         </Flex>
       </div>
       <NavigationOptions />
-      <hr />
       <Spacer y={46} />
-      <div className={styles.InstagramContainer}>
-        <Button
-          rounded
-          className={styles.Instagram}
-          style={{ padding: 20, width: 'fit-content' }}
-        >
-          <IconInstagram width={30} height={30} />
+      <div className={styles.Suscribe}>
+        <Button rounded variant="primary" className={styles.Btn}>
+          <IconInstagram width={30} />
         </Button>
         <Spacer y={5} />
         <Typography.P size="sm" weight="bold">
