@@ -1,10 +1,28 @@
 {
   "navigation": [
-    "SOBRE NOSOTROS",
-    "MEDIDAS DE SEGURIDAD (COVID-19)",
-    "CÓMO MERCAR",
-    "PROVEEDORES",
-    "CONTÁCTENOS",
-    "ZONA DE COBERTURA"
+    {
+      "text": "SOBRE NOSOTROS",
+      "href": "/about-us"
+    },
+    {
+      "text": "MEDIDAS DE SEGURIDAD (COVID-19)",
+      "href": "/security-constraints"
+    },
+    {
+      "text": "CÓMO MERCAR",
+      "href": "/how-merch"
+    },
+    {
+      "text": "PROVEEDORES",
+      "href": "/our-providers"
+    },
+    {
+      "text": "CONTÁCTENOS",
+      "href": "/contact-us"
+    },
+    {
+      "text": "ZONA DE COBERTURA",
+      "href": "/support-zone"
+    }
   ]
 }

@@ -3,14 +3,25 @@ import { navigation } from './data.json'
 
 import styles from './NavigationOptions.style.module.css'
 
+type Option = {
+  text: string
+  href: string
+}
+
 type Props = {
-  options?: string[]
+  options?: Option[]
 }
 
 const NavigationOptions: React.FC<Props> = ({ options = navigation }) => (
   <div className={styles.Navigation}>
-    {options.map((text, i) => (
-      <Typography.Link className={styles.Link} size="md" weight="bold" key={i}>
+    {options.map(({ href, text }, i) => (
+      <Typography.Link
+        className={styles.Link}
+        size="md"
+        weight="bold"
+        key={i}
+        href={href}
+      >
         {text}
       </Typography.Link>
     ))}
