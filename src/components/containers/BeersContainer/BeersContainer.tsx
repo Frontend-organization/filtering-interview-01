@@ -6,55 +6,54 @@ import Spacer from '@components/common/Spacer'
 import Typography from '@components/common/Typography'
 
 import styles from './BeersContainer.style.module.css'
+import Flex from '../../common/Flex'
 
 type Props = {
-  products: Beer[]
+  beers: Beer[]
   renderEmptyComponent?: JSX.Element
 }
 const doNothing = (name) => {
   return () => {
-    console.log(`The product is ${name}`)
+    console.log(`The beer is: ${name}`)
   }
 }
 
-const BeersContainer: React.FC<Props> = ({
-  products,
-  renderEmptyComponent
-}) => {
+const BeersContainer: React.FC<Props> = ({ beers, renderEmptyComponent }) => {
   return (
-    <div className={styles.BeersContainer}>
-      {products.length === 0 ? (
+    <div className={styles.beersContainer}>
+      {beers.length === 0 ? (
         renderEmptyComponent
       ) : (
         <>
-          <div className={styles.BeersCards}>
-            {products.map((beer, index) => {
+          <div className={styles.beersCards}>
+            {beers.map(({ img: image, price, ...rest }, index) => {
+              const { description, filterId, name } = rest
               return (
                 <Card
                   key={index}
-                  addProduct={doNothing(beer.name)}
+                  addProduct={doNothing(name)}
                   product={{
-                    title: beer.name,
-                    description: beer.description,
-                    filterId: beer.filterId,
-                    image: beer.img,
-                    price: beer.price
+                    title: name,
+                    description,
+                    filterId,
+                    image,
+                    price
                   }}
                 />
               )
             })}
           </div>
           <Spacer y={16} />
-          <Button className={styles.BtnMoreMeers}>
-            <Typography.P className={styles.Text1} size="sm">
-              Sigue mercando
-            </Typography.P>
-            <Typography.P className={styles.Text2} weight="bold" size="lg">
-              Vinos
-            </Typography.P>
-            <span className={styles.Icon}>
-              <ArrowRight width={15} height={15} />
-            </span>
+          <Button
+            className={styles.btnMoreBeers}
+            renderRight={<ArrowRight width={15} height={15} />}
+          >
+            <Flex flexDirection="column">
+              <Typography.P size="sm">Sigue mercando</Typography.P>
+              <Typography.P weight="bold" size="lg">
+                Vinos
+              </Typography.P>
+            </Flex>
           </Button>
         </>
       )}

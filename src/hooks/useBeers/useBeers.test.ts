@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks'
+import { getBeers } from '@services/beerService'
 
 import useBeers from '.'
-import { getBeers } from '../../services/beerService'
 
 jest.mock('../../services/beerService')
 
