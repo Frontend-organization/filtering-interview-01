@@ -32,27 +32,25 @@ const Card: React.FC<Props> = ({ product, addProduct }) => {
 
   return (
     <div className={styles.card}>
-      <Flex flexDirection="column">
-        <div className={styles.cardBeer}>
-          <Flex flexDirection="column">
-            <Picture source={image} alt={title.toLowerCase()} />
-            <h1 className={styles.beerTitle}>{title}</h1>
-            <p className={styles.beerDescription}>{description}</p>
-            <p className={styles.beerPrice}>{priceFormatter.format(price)}</p>
-          </Flex>
-        </div>
-        <Button
-          onClick={handleAddProduct}
-          style={{
-            borderColor: 'transparent',
-            backgroundColor: '#f4f4f4',
-            borderTopLeftRadius: 0,
-            borderTopRightRadius: 0
-          }}
-        >
-          <span className={styles.cardButtonText}>AGREGAR</span>
-        </Button>
-      </Flex>
+      <div className={styles.cardBeer}>
+        <Flex flexDirection="column">
+          <Picture source={image} alt={title.toLowerCase()} />
+          <h1 className={styles.beerTitle}>{title}</h1>
+          <p className={styles.beerDescription}>{description}</p>
+          <p className={styles.beerPrice}>{priceFormatter.format(price)}</p>
+        </Flex>
+      </div>
+      <Button
+        onClick={handleAddProduct}
+        style={{
+          borderColor: 'transparent',
+          backgroundColor: '#f4f4f4',
+          borderTopLeftRadius: 0,
+          borderTopRightRadius: 0
+        }}
+      >
+        <span className={styles.cardButtonText}>AGREGAR</span>
+      </Button>
     </div>
   )
 }

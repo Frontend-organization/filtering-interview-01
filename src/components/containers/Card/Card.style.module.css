@@ -1,7 +1,12 @@
 .card {
-  width: 165px;
+  width: 100%;
+  max-width: 280px;
+  height: 100%;
   border: 1px solid #e5e5e5;
   background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 4px;
   font-family: 'Poppins';
 }

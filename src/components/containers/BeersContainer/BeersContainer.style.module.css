@@ -1,0 +1,38 @@
+.BeersContainer {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px 48px;
+}
+
+.BeersCards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 15px;
+}
+
+.BtnMoreMeers {
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'text1 icon'
+    'text2 icon';
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.BtnMoreMeers .Text1 {
+  margin: 0;
+  text-align: left;
+  grid-area: text1;
+}
+
+.BtnMoreMeers .Text2 {
+  margin: 0;
+  text-align: left;
+  grid-area: text2;
+}
+.BtnMoreMeers span {
+  text-align: right;
+  grid-area: icon;
+}
