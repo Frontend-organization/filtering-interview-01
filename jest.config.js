@@ -77,11 +77,11 @@ module.exports = {
       '<rootDir>/__mocks__/fileMock.js',
     '\\.(css|less)$': 'identity-obj-proxy',
     '\\.svg$': '<rootDir>/__mocks__/svgrMock.js',
-    '^@services(.*)$': '<rootDir>/src/services',
+    '^@services(.*)$': '<rootDir>/src/services$1',
     '^@components(.*)$': '<rootDir>/src/components$1',
     '^@context(.*)$': '<rootDir>/src/context$1',
-    '^@hooks(.*)$': '<rootDir>/src/hooks',
-    '^@assets(.*)$': '<rootDir>/src/assets',
+    '^@hooks(.*)$': '<rootDir>/src/hooks$1',
+    '^@assets(.*)$': '<rootDir>/src/assets$1',
     '^@libs(.*)$': '<rootDir>/src/libs'
   },
 
