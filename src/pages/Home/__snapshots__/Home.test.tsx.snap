@@ -67,29 +67,6 @@ Object {
           />
         </main>
         <div
-          class="filter-btn"
-        >
-          <div
-            class="widget"
-          >
-            <button
-              class="button 
-    primary "
-              type="button"
-            >
-              FILTRAR
-              <div
-                class="rightElement"
-              >
-                <i
-                  fill="#fff"
-                  width="22"
-                />
-              </div>
-            </button>
-          </div>
-        </div>
-        <div
           style="height: 22px; width: 0px;"
         />
         <footer
@@ -231,6 +208,29 @@ Object {
             </p>
           </div>
         </footer>
+        <div
+          class="filter-btn"
+        >
+          <div
+            class="widget"
+          >
+            <button
+              class="button 
+    primary "
+              type="button"
+            >
+              FILTRAR
+              <div
+                class="rightElement"
+              >
+                <i
+                  fill="#fff"
+                  width="22"
+                />
+              </div>
+            </button>
+          </div>
+        </div>
       </section>
     </div>
   </body>,
@@ -296,29 +296,6 @@ Object {
           class="beersContainer"
         />
       </main>
-      <div
-        class="filter-btn"
-      >
-        <div
-          class="widget"
-        >
-          <button
-            class="button 
-    primary "
-            type="button"
-          >
-            FILTRAR
-            <div
-              class="rightElement"
-            >
-              <i
-                fill="#fff"
-                width="22"
-              />
-            </div>
-          </button>
-        </div>
-      </div>
       <div
         style="height: 22px; width: 0px;"
       />
@@ -461,6 +438,29 @@ Object {
           </p>
         </div>
       </footer>
+      <div
+        class="filter-btn"
+      >
+        <div
+          class="widget"
+        >
+          <button
+            class="button 
+    primary "
+            type="button"
+          >
+            FILTRAR
+            <div
+              class="rightElement"
+            >
+              <i
+                fill="#fff"
+                width="22"
+              />
+            </div>
+          </button>
+        </div>
+      </div>
     </section>
   </div>,
   "debug": [Function],
