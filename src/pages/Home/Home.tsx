@@ -73,13 +73,13 @@ const Home: React.FC = () => {
         </Heading>
       </Flex>
       {renderContent()}
+      <Spacer y={22} />
+      <Footer />
       <div className={s['filter-btn']}>
         <FilterSelectorWidget onClick={() => modalRef.current?.show()}>
           Filtrar
         </FilterSelectorWidget>
       </div>
-      <Spacer y={22} />
-      <Footer />
       <Modal ref={modalRef}>
         {({ visible }) => (
           <div
@@ -95,10 +95,12 @@ const Home: React.FC = () => {
                 <CloseIcon width={22} />
               </Button>
             </div>
-            <Selector
-              onFilter={() => modalRef.current?.hide()}
-              defaultFilters={filters}
-            />
+            {visible ? (
+              <Selector
+                onFilter={() => modalRef.current?.hide()}
+                defaultFilters={filters}
+              />
+            ) : null}
           </div>
         )}
       </Modal>
