@@ -1,0 +1,25 @@
+.checkbox {
+  align-items: center;
+  border-radius: 4px;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+}
+
+.active {
+  background-color: var(--color-blue-500);
+}
+
+.inactive {
+  background-color: var(--color-transparent);
+  border-color: var(--color-gray-100);
+}
+
+.checkboxController {
+  display: none;
+  z-index: -99;
+  opacity: 0;
+  transform: scale(0);
+}

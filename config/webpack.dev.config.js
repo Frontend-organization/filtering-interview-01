@@ -15,6 +15,12 @@ module.exports = {
   resolve: {
     alias: {
       'react-dom': '@hot-loader/react-dom',
+      '@services': path.resolve(__dirname, '../src/services'),
+      '@components': path.resolve(__dirname, '../src/components'),
+      '@hooks': path.resolve(__dirname, '../src/hooks'),
+      '@assets': path.resolve(__dirname, '../src/assets'),
+      '@context': path.resolve(__dirname, '../src/context'),
+      '@libs': path.resolve(__dirname, '../src/libs')
     }
   },
   plugins: [

@@ -1,0 +1,44 @@
+.button {
+  align-items: center;
+  background-color: var(--color-transparent);
+  border: solid 1px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  justify-content: center;
+  min-width: 12px;
+  padding: 10px 27px;
+}
+
+.primary {
+  background-color: var(--color-blue-500);
+  border-color: var(--color-transparent);
+  color: var(--color-white);
+}
+
+.secondary {
+  border-color: var(--color-gray-100);
+  color: var(--color-gray-900);
+}
+
+.leftElement {
+  align-items: center;
+  display: flex;
+  margin-right: 0.4rem;
+}
+
+.rightElement {
+  align-items: center;
+  display: flex;
+  margin-left: 0.4rem;
+}
+
+.rounded {
+  border-radius: 50px;
+}
+
+.full {
+  width: 100%;
+}

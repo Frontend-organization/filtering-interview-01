@@ -1,0 +1,30 @@
+.beersContainer {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px 48px;
+  margin: 0 auto;
+}
+
+.beersCards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  gap: 15px;
+}
+
+@media only screen and (min-width: 376px) {
+  .beersCards {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+}
+
+.btnMoreBeers {
+  max-width: 400px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.btnMoreBeers p {
+  margin: 0;
+  text-align: start;
+}

@@ -1,0 +1,58 @@
+.Footer {
+  width: 100%;
+  height: auto;
+}
+
+.Footer .Contact {
+  padding: 30px 50px;
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.FooterButton {
+  width: fit-content;
+  padding: 20px;
+}
+
+.BtnFooter .Btn {
+  background-color: var(--color-white);
+}
+
+.Btn {
+  width: fit-content;
+  padding: 20px;
+}
+
+.BtnFooter .ButtonContact {
+  border: 1px solid white;
+  background-color: var(--color-white);
+}
+
+.Suscribe {
+  text-align: center;
+  position: relative;
+}
+
+.Suscribe::before {
+  content: '';
+  width: 40px;
+  border-top: 1px solid #c8d5d9;
+  position: absolute;
+  top: -50px;
+  transform: translateX(-50%);
+}
+
+.Suscribe .Btn {
+  margin: 0 auto;
+}
+
+.CreditsContainer {
+  text-align: center;
+  background-color: var(--color-gray-900);
+  padding: 10px 0;
+}
+
+.Credits {
+  color: var(--color-white);
+}

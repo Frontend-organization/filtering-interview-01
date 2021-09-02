@@ -1,0 +1,52 @@
+.card {
+  width: 100%;
+  max-width: 280px;
+  height: 100%;
+  border: 1px solid #e5e5e5;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px;
+  font-family: 'Poppins';
+}
+
+.cardBeer {
+  padding: 18px 14px 0;
+}
+
+.cardButtonText {
+  color: var(--color-blue-500);
+}
+
+.beerTitle {
+  margin: 12px 0 6px;
+  font-size: 15px;
+  font-family: 'Poppins 700';
+}
+
+.beerDescription {
+  margin: 6px 0 7px;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: 'Poppins';
+  color: var(--color-gray-600);
+}
+
+.beerPrice {
+  width: 135px;
+  display: block;
+  margin: 7px 0 12px;
+  font-family: 'Poppins 600';
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.beerPrice:hover {
+  white-space: normal;
+  text-overflow: initial;
+  cursor: pointer;
+}

@@ -1,0 +1,23 @@
+.wrapper {
+  background-color: #00000050;
+  min-height: 100%;
+  opacity: 0;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  width: 100%;
+  transition: opacity ease-out 0.3s;
+}
+
+.wrapper > .content > * {
+  pointer-events: none;
+}
+
+.wrapper.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper.visible > .content > * {
+  pointer-events: auto;
+}
