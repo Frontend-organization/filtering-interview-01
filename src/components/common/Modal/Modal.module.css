@@ -1,6 +1,6 @@
 .wrapper {
   background-color: #00000050;
-  min-height: 100vh;
+  min-height: 100%;
   opacity: 0;
   position: fixed;
   pointer-events: none;

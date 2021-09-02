@@ -1,0 +1,518 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> should render without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="container"
+      >
+        <header
+          class="navbar-wrapper"
+        >
+          <section
+            class="navbar"
+          >
+            <div
+              class="navbar__left"
+            >
+              <i
+                data-testid="btn-menu"
+                fill="#fff"
+                height="32"
+                width="32"
+              />
+              <div
+                style="height: 0px; width: 10px;"
+              />
+              <i
+                fill="#fff"
+                height="30"
+                width="43"
+              />
+            </div>
+            <div
+              class="navbar__right"
+            >
+              <i
+                fill="#fff"
+                width="24"
+              />
+              <div
+                style="height: 0px; width: 16px;"
+              />
+              <i
+                fill="#fff"
+                width="24"
+              />
+            </div>
+          </section>
+        </header>
+        <div
+          style="height: 80px; width: 0px;"
+        />
+        <div
+          style="display: flex; justify-content: center;"
+        >
+          <h1
+            class="heading bold xl "
+          >
+            Cervezas
+          </h1>
+        </div>
+        <main>
+          <div
+            class="beersContainer"
+          />
+        </main>
+        <div
+          class="filter-btn"
+        >
+          <div
+            class="widget"
+          >
+            <button
+              class="button 
+    primary "
+              type="button"
+            >
+              FILTRAR
+              <div
+                class="rightElement"
+              >
+                <i
+                  fill="#fff"
+                  width="22"
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          style="height: 22px; width: 0px;"
+        />
+        <footer
+          class="Footer"
+        >
+          <div
+            class="Contact"
+          >
+            <h1
+              class="heading bold md "
+            >
+              ¿Podemos ayudarle?
+            </h1>
+            <div
+              style="height: 18px; width: 0px;"
+            />
+            <div
+              style="display: flex; justify-content: center;"
+            >
+              <div
+                class="BtnFooter"
+              >
+                <button
+                  class="button 
+  rounded full secondary Btn"
+                  type="button"
+                >
+                  <i
+                    fill="#000"
+                    height="28"
+                    width="30"
+                  />
+                </button>
+                <p
+                  class="paragraph bold md "
+                >
+                  CHAT
+                </p>
+              </div>
+              <div
+                style="height: 0px; width: 110px;"
+              />
+              <div
+                class="BtnFooter"
+              >
+                <button
+                  class="button 
+  rounded  secondary Btn"
+                  type="button"
+                >
+                  <i
+                    fill="#000"
+                    height="28"
+                    width="30"
+                  />
+                </button>
+                <p
+                  class="paragraph bold md "
+                >
+                  LLAMAR
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="Navigation"
+          >
+            <a
+              class="link bold md Link"
+              href="/about-us"
+            >
+              SOBRE NOSOTROS
+            </a>
+            <a
+              class="link bold md Link"
+              href="/security-constraints"
+            >
+              MEDIDAS DE SEGURIDAD (COVID-19)
+            </a>
+            <a
+              class="link bold md Link"
+              href="/how-merch"
+            >
+              CÓMO MERCAR
+            </a>
+            <a
+              class="link bold md Link"
+              href="/our-providers"
+            >
+              PROVEEDORES
+            </a>
+            <a
+              class="link bold md Link"
+              href="/contact-us"
+            >
+              CONTÁCTENOS
+            </a>
+            <a
+              class="link bold md Link"
+              href="/support-zone"
+            >
+              ZONA DE COBERTURA
+            </a>
+          </div>
+          <div
+            style="height: 46px; width: 0px;"
+          />
+          <div
+            class="Suscribe"
+          >
+            <button
+              class="button 
+  rounded  primary Btn"
+              type="button"
+            >
+              <i
+                width="30"
+              />
+            </button>
+            <div
+              style="height: 5px; width: 0px;"
+            />
+            <p
+              class="paragraph bold sm "
+            >
+              POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES
+            </p>
+          </div>
+          <div
+            style="height: 36px; width: 0px;"
+          />
+          <div
+            class="CreditsContainer"
+          >
+            <p
+              class="paragraph bold sm Credits"
+            >
+              © 2020 Axiacore
+            </p>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="container"
+    >
+      <header
+        class="navbar-wrapper"
+      >
+        <section
+          class="navbar"
+        >
+          <div
+            class="navbar__left"
+          >
+            <i
+              data-testid="btn-menu"
+              fill="#fff"
+              height="32"
+              width="32"
+            />
+            <div
+              style="height: 0px; width: 10px;"
+            />
+            <i
+              fill="#fff"
+              height="30"
+              width="43"
+            />
+          </div>
+          <div
+            class="navbar__right"
+          >
+            <i
+              fill="#fff"
+              width="24"
+            />
+            <div
+              style="height: 0px; width: 16px;"
+            />
+            <i
+              fill="#fff"
+              width="24"
+            />
+          </div>
+        </section>
+      </header>
+      <div
+        style="height: 80px; width: 0px;"
+      />
+      <div
+        style="display: flex; justify-content: center;"
+      >
+        <h1
+          class="heading bold xl "
+        >
+          Cervezas
+        </h1>
+      </div>
+      <main>
+        <div
+          class="beersContainer"
+        />
+      </main>
+      <div
+        class="filter-btn"
+      >
+        <div
+          class="widget"
+        >
+          <button
+            class="button 
+    primary "
+            type="button"
+          >
+            FILTRAR
+            <div
+              class="rightElement"
+            >
+              <i
+                fill="#fff"
+                width="22"
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        style="height: 22px; width: 0px;"
+      />
+      <footer
+        class="Footer"
+      >
+        <div
+          class="Contact"
+        >
+          <h1
+            class="heading bold md "
+          >
+            ¿Podemos ayudarle?
+          </h1>
+          <div
+            style="height: 18px; width: 0px;"
+          />
+          <div
+            style="display: flex; justify-content: center;"
+          >
+            <div
+              class="BtnFooter"
+            >
+              <button
+                class="button 
+  rounded full secondary Btn"
+                type="button"
+              >
+                <i
+                  fill="#000"
+                  height="28"
+                  width="30"
+                />
+              </button>
+              <p
+                class="paragraph bold md "
+              >
+                CHAT
+              </p>
+            </div>
+            <div
+              style="height: 0px; width: 110px;"
+            />
+            <div
+              class="BtnFooter"
+            >
+              <button
+                class="button 
+  rounded  secondary Btn"
+                type="button"
+              >
+                <i
+                  fill="#000"
+                  height="28"
+                  width="30"
+                />
+              </button>
+              <p
+                class="paragraph bold md "
+              >
+                LLAMAR
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="Navigation"
+        >
+          <a
+            class="link bold md Link"
+            href="/about-us"
+          >
+            SOBRE NOSOTROS
+          </a>
+          <a
+            class="link bold md Link"
+            href="/security-constraints"
+          >
+            MEDIDAS DE SEGURIDAD (COVID-19)
+          </a>
+          <a
+            class="link bold md Link"
+            href="/how-merch"
+          >
+            CÓMO MERCAR
+          </a>
+          <a
+            class="link bold md Link"
+            href="/our-providers"
+          >
+            PROVEEDORES
+          </a>
+          <a
+            class="link bold md Link"
+            href="/contact-us"
+          >
+            CONTÁCTENOS
+          </a>
+          <a
+            class="link bold md Link"
+            href="/support-zone"
+          >
+            ZONA DE COBERTURA
+          </a>
+        </div>
+        <div
+          style="height: 46px; width: 0px;"
+        />
+        <div
+          class="Suscribe"
+        >
+          <button
+            class="button 
+  rounded  primary Btn"
+            type="button"
+          >
+            <i
+              width="30"
+            />
+          </button>
+          <div
+            style="height: 5px; width: 0px;"
+          />
+          <p
+            class="paragraph bold sm "
+          >
+            POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES
+          </p>
+        </div>
+        <div
+          style="height: 36px; width: 0px;"
+        />
+        <div
+          class="CreditsContainer"
+        >
+          <p
+            class="paragraph bold sm Credits"
+          >
+            © 2020 Axiacore
+          </p>
+        </div>
+      </footer>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

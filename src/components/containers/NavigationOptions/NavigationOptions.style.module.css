@@ -2,6 +2,7 @@
   min-width: 300px;
   max-width: 1250px;
   padding: 36px 0;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;

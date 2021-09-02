@@ -1,4 +1,4 @@
-import Card from '../Card'
+import Card from '@components/containers/Card'
 import ArrowRight from '@assets/icons/arrow-right.svg'
 import { Beer } from '@services/beerService'
 import Button from '@components/common/Button'
