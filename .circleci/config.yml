@@ -13,10 +13,10 @@ jobs:
       - run: npm install
       - run:
           name: test
-          command: npm run test
+          command: npm run test --runInBand
           no_output_timeout: 5m
           environment:
-            NODE_OPTIONS: --max_old_space_size=8192, --maxWorkers=2
+            NODE_OPTIONS: --max_old_space_size=8192
 workflows:
   build-and-test:
     jobs:
