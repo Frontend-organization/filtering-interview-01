@@ -2,7 +2,7 @@
 version: 2.1
 
 orbs:
-  node: itinerisltd/yarn@2.1.1
+  node: circleci/node@4.1
 
 jobs:
   build-and-test:
@@ -10,8 +10,8 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - run: yarn
-      - run: yarn test
+      - run: npm install
+      - run: npm run test
 workflows:
   build-and-test:
     jobs:
