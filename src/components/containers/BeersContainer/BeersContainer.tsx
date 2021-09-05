@@ -25,7 +25,7 @@ const BeersContainer: React.FC<Props> = ({ beers, renderEmptyComponent }) => {
         renderEmptyComponent
       ) : (
         <>
-          <div className={styles.beersCards}>
+          <div className={styles.beersCards} data-cy="beers-container">
             {beers.map(({ img: image, price, ...rest }, index) => {
               const { description, filterId, name } = rest
               return (
