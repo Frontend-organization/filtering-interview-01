@@ -11,9 +11,10 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - run: 
+      - run:
           name: test
           command: npm run test
+          no_output_timeout: 5m
           environment:
             NODE_OPTIONS: --max_old_space_size=8192
 workflows:
