@@ -16,7 +16,7 @@ jobs:
           command: npm run test
           no_output_timeout: 5m
           environment:
-            NODE_OPTIONS: --max_old_space_size=8192
+            NODE_OPTIONS: --max_old_space_size=8192, --maxWorkers=2
 workflows:
   build-and-test:
     jobs:
