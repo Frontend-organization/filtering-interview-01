@@ -1,0 +1,18 @@
+# This config is equivalent to both the '.circleci/extended/orb-free.yml' and the base '.circleci/config.yml'
+version: 2.1
+
+orbs:
+  node: itinerisltd/yarn@2.1.1
+
+jobs:
+  build-and-test:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - run: yarn
+      - run: yarn test
+workflows:
+  build-and-test:
+    jobs:
+      - build-and-test
