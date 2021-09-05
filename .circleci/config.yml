@@ -11,7 +11,11 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - run: npm run test
+      - run: 
+          name: test
+          command: npm run test
+          environment:
+            NODE_OPTIONS: --max_old_space_size=8192
 workflows:
   build-and-test:
     jobs:
