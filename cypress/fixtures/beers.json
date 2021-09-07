@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "name": "TEST - Cassels Milk Stou",
+      "description": "Cassels & Sons Brewing. Cerveza porter y stout.",
+      "price": 75000,
+      "img": "https://res.cloudinary.com/snack-coder-cloud/image/upload/v1627863161/cassels_hityhj.png",
+      "filterId": "rubia"
+    },
+    {
+      "name": "TEST - Camba Pale Ale",
+      "description": "La Souche Franc-Bois d’hiver. Cerveza pale.",
+      "price": 85300,
+      "img": "https://res.cloudinary.com/snack-coder-cloud/image/upload/v1627863161/camba_bgyigt.png",
+      "filterId": "morena"
+    },
+    {
+      "name": "TEST - Votus Nº 001",
+      "description": "India Pale Ale del año 2019. Nº 001 Red IPA.",
+      "price": 75000,
+      "img": "https://res.cloudinary.com/snack-coder-cloud/image/upload/v1627863161/votus_apscqw.png",
+      "filterId": "roja"
+    },
+    {
+      "name": "TEST - Prairie Artisian",
+      "description": "Ales Prairie Noir Whiskey Barrel Aged Imperial Stout 12oz.",
+      "price": 85300,
+      "img": "https://res.cloudinary.com/snack-coder-cloud/image/upload/v1627863161/prairie-artisian_eb5c6z.png",
+      "filterId": "rubia"
+    },
+    {
+      "name": "TEST - Lost Abbey",
+      "description": "The Lost Abbey Citrus Sin American Wild Ale 750ml.",
+      "price": 75000,
+      "img": "https://res.cloudinary.com/snack-coder-cloud/image/upload/v1627863161/lost-abbey_zkplwf.png",
+      "filterId": "morena"
+    }
+  ]
+}

@@ -76,7 +76,7 @@ const FiltersSelector: React.FC<Props> = ({
         <Typography.Heading size="lg" weight="bold">
           Filtros
         </Typography.Heading>
-        <div className={s.filters}>
+        <div className={s.filters} data-cy="filters-selector">
           {filterOptions.map((filter, i) => (
             <SelectorOption
               active={currentFilters.includes(filter)}
@@ -98,6 +98,7 @@ const FiltersSelector: React.FC<Props> = ({
           </Button>
           <Spacer x={22} />
           <Button
+            data-cy="btn-save-filters"
             variant="primary"
             onClick={saveFilters}
             renderRight={

@@ -9,7 +9,7 @@ import s from './FiltersSelector.module.css'
 const Widget: React.FC<ComponentProps<'button'>> = (props) => {
   const { filters } = useFilters()
   return (
-    <div className={s.widget}>
+    <div className={s.widget} data-cy="btn-filters">
       <Button
         variant="primary"
         renderRight={
